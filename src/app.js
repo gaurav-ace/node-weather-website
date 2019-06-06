@@ -8,7 +8,7 @@
   //console.log(__filename)
 //  console.log(path.join(__dirname+ '../../public'))
  const app = express()
-
+ const port = process.env.PORT || 3000
 
   const publicpath = path.join(__dirname ,'../public')
   const partialpath = path.join(__dirname,'../templates/partials')
@@ -102,6 +102,6 @@
      errormsg: 'page not found!'
    })
  })
- app.listen(3000,()=>{
-   console.log('port 3000 is up on server')
+ app.listen(port,()=>{
+   console.log('server is up on port' + port)
  })
