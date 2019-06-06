@@ -13,7 +13,7 @@ const forecast = (a , b, callback)=> {
         callback('not a valid coordinate! Try another..',undefined)
       }
       else {
-        callback(undefined,body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degrees out. There is ' + body.currently.precipProbability + ' % chance of rain. The wind speed is ' + body.daily.data[0].windSpeed + 'km/hr')
+        callback(undefined,body.daily.data[0].summary + ' It is currently ' + body.currently.temperature + ' degrees out. There is ' + body.currently.precipProbability + ' % chance of rain. The wind speed is ' + body.daily.data[0].windSpeed + ' km/hr')
       }
   })
 }
