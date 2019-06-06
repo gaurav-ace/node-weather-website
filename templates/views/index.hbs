@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="icon" href="/img/weather.png">
+    <link rel="stylesheet" href="/css/style.css">
+
+    <title>The Weather App</title>
+  </head>
+  <body>
+    <div class="main">
+      {{>header}}
+        <p><h2>  Enter the location to get the weather forecast!!</h2> </p>
+          <form >
+            <input placeholder="location name">
+            <button class="button">Search</button>
+          </form>
+
+          <p id=msg1> </p>
+          <p id=msg2> </p>
+    </div>
+    {{>footer}}
+      <script src="/js/user.js"></script>  <!--placing the script below ensures every thing else is already called and javascript can access any of those properties>
+  </body>
+</html>
