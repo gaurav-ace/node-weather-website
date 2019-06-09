@@ -3,7 +3,7 @@ const chalk = require('chalk')
 const forecast = (a , b, callback)=> {
 
   const url = 'https://api.darksky.net/forecast/9da3ed50390f45cf3b2d19bedda9b9ec/' + a + ',' + b + '?units=si&lang=en'
-  request({url, json: true},(error,{body})=> {
+  request({url, json: true},(error,{body}={})=> {
       if(error)
       {
         callback('unable to connect to weather services!!',undefined)

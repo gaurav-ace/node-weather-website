@@ -30,6 +30,9 @@ header a{
   font-size: 20px;
 }
 
+header a:hover {
+  color: #000000;
+}
 h1 {
   font-size: 60px;
   font-family: arial;
@@ -67,7 +70,7 @@ input {
   margin: auto;
   padding: 10px;
 }
-.button: hover{
+.button:hover{
   background-color: #000000;
 }
 #msg1 {

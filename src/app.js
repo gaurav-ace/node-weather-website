@@ -7,7 +7,7 @@
   ///console.log(__dirname)
   //console.log(__filename)
 //  console.log(path.join(__dirname+ '../../public'))
- const app = express()
+ const app = express()    //creating an instance of the express package..
  const port = process.env.PORT || 3000
 
   const publicpath = path.join(__dirname ,'../public')
